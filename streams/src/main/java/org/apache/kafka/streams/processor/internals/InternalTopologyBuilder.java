@@ -400,6 +400,7 @@ public class InternalTopologyBuilder {
         Objects.requireNonNull(name, "name can't be null");
 
         if (nodeFactories.containsKey(name)) {
+            System.out.println("Processor " + name + " is already added.");
             throw new TopologyException("Processor " + name + " is already added.");
         }
 

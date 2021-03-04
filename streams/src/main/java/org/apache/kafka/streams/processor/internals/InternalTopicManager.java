@@ -167,7 +167,8 @@ public class InternalTopicManager {
                     } catch (final TimeoutException retryableException) {
                         log.error("Creating topic {} timed out.\n" +
                             "Error message was: {}", topicName, retryableException.toString());
-                    }
+                    } catch(final Exception e) {
+                        log.error("Some other error occurred");
                 }
             }
 

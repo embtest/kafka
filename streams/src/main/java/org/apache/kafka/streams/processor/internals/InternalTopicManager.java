@@ -169,6 +169,7 @@ public class InternalTopicManager {
                             "Error message was: {}", topicName, retryableException.toString());
                     } catch(final Exception e) {
                         log.error("Some other error occurred");
+                    }
                 }
             }
 

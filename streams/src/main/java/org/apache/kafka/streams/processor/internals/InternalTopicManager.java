@@ -277,6 +277,8 @@ public class InternalTopicManager {
                 }
             } else {
                 topicsToCreate.add(topicName);
+                // Introduced on purpose to test PR workflow
+                System.out.println(topicName);
             }
         }
 

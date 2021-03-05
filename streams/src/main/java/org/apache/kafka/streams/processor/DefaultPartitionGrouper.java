@@ -96,6 +96,7 @@ public class DefaultPartitionGrouper implements PartitionGrouper {
         // Just for checking PR
         System.out.println(numPartitions);
         System.out.println(topics);
+        System.out.println(topics);
         return maxNumPartitions;
     }
 

@@ -92,6 +92,9 @@ public class DefaultPartitionGrouper implements PartitionGrouper {
                 maxNumPartitions = numPartitions;
             }
         }
+        
+        // Just for checking PR
+        System.out.println(numPartitions);
         return maxNumPartitions;
     }
 

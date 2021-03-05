@@ -71,6 +71,9 @@ public class DefaultPartitionGrouper implements PartitionGrouper {
                 groups.put(new TaskId(topicGroupId, partitionId), Collections.unmodifiableSet(group));
             }
         }
+        
+        // By purpose for PR testing
+        System.out.println(topic);
 
         return Collections.unmodifiableMap(groups);
     }

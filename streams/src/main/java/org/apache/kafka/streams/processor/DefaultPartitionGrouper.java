@@ -52,6 +52,8 @@ public class DefaultPartitionGrouper implements PartitionGrouper {
      */
     public Map<TaskId, Set<TopicPartition>> partitionGroups(final Map<Integer, Set<String>> topicGroups, final Cluster metadata) {
         final Map<TaskId, Set<TopicPartition>> groups = new HashMap<>();
+        
+        int forMergeTest = 0;
 
         for (final Map.Entry<Integer, Set<String>> entry : topicGroups.entrySet()) {
             final Integer topicGroupId = entry.getKey();

@@ -93,7 +93,6 @@ public class DefaultPartitionGrouper implements PartitionGrouper {
             }
         }
         
-        int forMergeTest = 0;
         return maxNumPartitions;
     }
 

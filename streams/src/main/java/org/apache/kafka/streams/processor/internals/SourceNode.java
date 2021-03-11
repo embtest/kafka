@@ -89,6 +89,8 @@ public class SourceNode<KIn, VIn, KOut, VOut> extends ProcessorNode<KIn, VIn, KO
                     context.valueSerde().deserializer()
             );
         }
+        
+        System.out.println("hello world");
     }
 
 

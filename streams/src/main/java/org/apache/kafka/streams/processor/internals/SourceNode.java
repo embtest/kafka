@@ -92,6 +92,11 @@ public class SourceNode<KIn, VIn, KOut, VOut> extends ProcessorNode<KIn, VIn, KO
         
         // Test for PR
         System.out.println("test");
+        
+        try {
+            int i = 0;
+        } catch(Exception e) {
+        }
     }
 
 

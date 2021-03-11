@@ -91,11 +91,7 @@ public class SourceNode<KIn, VIn, KOut, VOut> extends ProcessorNode<KIn, VIn, KO
         }
         
         // Test for PR
-        try {
-            int i = 0;
-            // Do not catch generic exception
-        } catch(Exception e) {
-        }
+        System.out.println("test");
     }
 
 

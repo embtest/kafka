@@ -34,6 +34,9 @@ import org.apache.kafka.streams.processor.internals.metrics.StreamsMetricsImpl;
 import org.apache.kafka.streams.state.internals.ThreadCache;
 import org.slf4j.Logger;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
@@ -223,6 +226,8 @@ public class GlobalStreamThread extends Thread {
         private final Logger log;
 
         private long lastFlush;
+        
+        private static ExecutorService executor = Executors.newCachedThreadPool();
 
         StateConsumer(final LogContext logContext,
                       final Consumer<byte[], byte[]> globalConsumer,
